@@ -1,4 +1,87 @@
+/* ANIMATIONS */ 
+.fadein-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadein-left {
+  opacity: 0;
+  animation: fadeInLeft 0.5s ease-out forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadein-right {
+  opacity: 0;
+  animation: fadeInRight 0.5s ease-out forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadein-bot {
+  opacity: 0;
+  animation: fadeInBot 0.5s forwards;
+}
+
+@keyframes fadeInBot {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadein-1 {
+  animation-delay: 200ms;
+}
+.fadein-2 {
+  animation-delay: 400ms;
+}
+.fadein-3 {
+  animation-delay: 600ms;
+}
+.fade-500 {
+  animation-delay: 500ms;
+}
 @keyframes wave-animation {
   0% { transform: rotate(0deg); }
   10% { transform: rotate(14deg); }
@@ -27,8 +110,9 @@
 .typewriter::after {
   content: '|';
   position: absolute;
-  right: -4px; 
+  right: -9px; 
   animation: blink 1s step-end infinite;
+  color: aliceblue;
 }
 
 @keyframes blink {
@@ -38,6 +122,8 @@
 }
 body {
   background: #111; 
+  overflow: hidden;
+  height: 100%; 
 }
 .container {
   display: flex;
@@ -50,14 +136,13 @@ body {
   font-family: 'Your font', sans-serif; 
 }
 
-
-
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 180px;
 }
 
 @media (min-width: 768px) {
@@ -66,19 +151,24 @@ body {
       gap: 2rem;
   }
 }
-
+body {
+  font-family: 'Poppins', sans-serif;
+}
 .text-content {
-  text-align: center;
+  text-align: left;
 }
 
 .intro-text {
   color: #F1C40F;
-  margin: 0%; 
+  margin: 0%;
+  font-size: 20px; 
+  text-align: left;
+  font-weight: 100;
 }
 
 .main-heading {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0;
   margin: 0%;
 }
@@ -90,18 +180,22 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-top: 15px;
+  min-height: 2.1rem;
+  font-weight: 400;
 }
 
 .welcome-message {
-  font-size: 1.2rem;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .profile-image {
-  width: 150px; 
-  height: 150px; 
+  width: 180px; 
+  height: 180px; 
   border-radius: 50%;
-  border: 4px solid #F1C40F; 
-  box-shadow: #F1C40F;
+  border: 4px solid #e7ca59; 
+  box-shadow: 0 0 10px #ddff00;
   
 }
 
@@ -110,36 +204,86 @@ body {
 */
 .navbar {
   display: flex;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: transparent; /* Assuming a transparent background */
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem ;
+  width: 90%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+}
+
+.brand-name {
+  font-size: 1.2rem; 
+  color: #F1C40F; 
 }
 
 .navbar-content {
   display: flex;
+  justify-content: start;
   align-items: center;
-  gap: 2rem; /* Adjust the gap to match the spacing in your design */
+  gap: 10px;
 }
 
 .nav-link {
-  color: white; /* Or the color in your design */
+  color: rgb(130, 128, 128); 
   font-weight: bolder;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: color 0.3s;
+  font-size: 20px;
+  box-sizing: border-box; 
+  display: inline-block; 
 }
 
 .nav-link.active {
-  text-decoration: underline;
+
+  padding-bottom: 0;
+  color: white;
+}
+.nav-link.active::after {
+  content: '';
+  display: block;
+  margin: auto; 
+  height: 4px; 
+  background-color: #F1C40F;
+  width: 100%; 
+  transform: scaleX(1); 
+  transition: transform 0.3s; 
 }
 
+.nav-link.active:hover::after {
+  transform: scaleX(0); /* Hide on hover if you want */
+}
+
+
 .nav-link:hover {
-  color: #F1C40F; /* Hover effect */
+  color: #F1C40F; 
 }
 
 .githubimg {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 70%;
   cursor: pointer;
+}
+
+.websiteicon {
+  border-radius: 80%;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 10%;
+  }
+
+  .navbar-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    padding: 0.1rem; 
+  }
 }

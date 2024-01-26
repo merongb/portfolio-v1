@@ -40,12 +40,12 @@ export default function Home() {
         <div className="container">
 <main className="main-content">
                 <div className="text-content">
-                    <p className="intro-text">Hello I'm</p>
-                    <h1 className="main-heading">Meron Gebrehiwet</h1>
-                    <h2 className="sub-heading typewriter">{currentText}</h2>
-                    <p className="welcome-message">Welcome to My personal website. <span className="wave">👋🏾</span></p>
+                    <p className="intro-text fadein-bot ">Hello I'm</p>
+                    <h1 className="main-heading fadein-left">Meron Gebrehiwet</h1>
+                    <h2 className="sub-heading typewriter fadein-right">{currentText}</h2>
+                    <p className="welcome-message fadein-up">Welcome to My personal website. <span className="wave">👋🏾</span></p>
                 </div>
-                <div className="image-container">
+                <div className="image-container fadein-up">
                     <img
                         src="https://media.licdn.com/dms/image/D4E03AQF73k6qWBWPTQ/profile-displayphoto-shrink_200_200/0/1693129158057?e=1711584000&v=beta&t=Zjl2EkK-h7PhX0bf9_5sALlhHBLmoR30Q83rnyiyhNA" 
                         alt="Meron Gebrehiwet"
