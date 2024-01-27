@@ -47,7 +47,7 @@ export default function Home() {
                 </div>
                 <div className="image-container fadein-up">
                     <img
-                        src="https://media.licdn.com/dms/image/D4E03AQF73k6qWBWPTQ/profile-displayphoto-shrink_200_200/0/1693129158057?e=1711584000&v=beta&t=Zjl2EkK-h7PhX0bf9_5sALlhHBLmoR30Q83rnyiyhNA" 
+                        src="https://media.licdn.com/dms/image/D4E03AQF73k6qWBWPTQ/profile-displayphoto-shrink_800_800/0/1693129158057?e=1711584000&v=beta&t=KpJNOrCPgLfd5Xg2XPYB4Wz1GwnKJhoD1HuN4QZBGrE" 
                         alt="Meron Gebrehiwet"
                         className="profile-image"
                     />

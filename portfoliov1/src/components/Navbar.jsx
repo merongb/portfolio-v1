@@ -3,11 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar() {
+
+
     return (
         <nav className="navbar">
             <div className="brand-name fadein-bot">merongb();</div>
             <div className="navbar-content">
-                <NavLink to='/' className='nav-link fadein-bot fadein-1'>Home</NavLink>
+                <NavLink to='/'  className='nav-link fadein-bot fadein-1'>Home</NavLink>
                 <NavLink to='/about' className='nav-link fadein-bot fadein-2'>About</NavLink>
                 <NavLink to='/portfolio' className='nav-link fadein-bot fadein-3'>Portfolio</NavLink>
                 

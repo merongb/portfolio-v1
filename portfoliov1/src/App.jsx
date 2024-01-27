@@ -5,6 +5,9 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Navbar from './components/Navbar';
 
+
+
+
 function App() {
   return (
     <>
