@@ -1,17 +1,27 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar() {
+    const handleClick = (event) => {
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
 
+
+        event.currentTarget.classList.add('active');
+    };
+
+
+    
 
     return (
         <nav className="navbar">
             <div className="brand-name fadein-bot">merongb();</div>
             <div className="navbar-content">
-                <NavLink to='/'  className='nav-link fadein-bot fadein-1'>Home</NavLink>
-                <NavLink to='/about' className='nav-link fadein-bot fadein-2'>About</NavLink>
-                <NavLink to='/portfolio' className='nav-link fadein-bot fadein-3'>Portfolio</NavLink>
+            <a href='#home' className='nav-link fadein-bot fadein-1' onClick={handleClick}>Home</a>
+                <a href='#about' className='nav-link fadein-bot fadein-2' onClick={handleClick}>About</a>
+                <a href='#portfolio' className='nav-link fadein-bot fadein-3' onClick={handleClick}>Portfolio</a>
                 
             </div>
             <a href="https://github.com/merongb" target="_blank" rel="noopener noreferrer" className="githubimg-container">

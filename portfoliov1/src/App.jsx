@@ -12,11 +12,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
+      <main className="flex flex-col justify-between items-center gap-8 pt-28">
+      <div id="home">
+<Home/></div>
+
+<About/>
+</main>
     </>
   );
 }

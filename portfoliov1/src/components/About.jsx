@@ -1,4 +1,3 @@
-// About.js
 import React, { useState } from 'react';
 
 export default function About() {
@@ -8,17 +7,30 @@ export default function About() {
     const [isHovered, setIsHovered] = useState(false);
   
     return (
-      <div 
-        className="skill" 
-        onMouseEnter={() => setIsHovered(true)} 
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <img src={imageUrl} alt={name} className="skill-image" />
-        <div className="skill-text">
-          <span>{name}</span>
-          {isHovered && <span className="skill-level">{level}</span>}
-        </div>
-      </div>
+<div 
+  className="skill relative inline-flex items-center p-6 m-4 border border-yellow-400 rounded cursor-pointer transition-all duration-700 hover:bg-yellow-600"
+  onMouseEnter={() => setIsHovered(true)} 
+  onMouseLeave={() => setIsHovered(false)}
+>
+  <img src={imageUrl} alt={name} className={`w-8 h-8 mr-2 transition-transform duration-300 ease-in-out ${isHovered ? 'scale-125' : ''
+  }`} />
+  <div className={`flex flex-col items-center text-white ` }>
+    <span 
+      className={`transition-all duration-300  transform ${isHovered ? 'translate-y-[-10px]' : 'translate-y-[10px]'}`}
+    >
+      {name}
+    </span>
+    <span 
+      className={`text-sm transition-all duration-300 transform ${isHovered ? 'translate-y-[-10px] opacity-100' : 'opacity-0'} `}
+      style={{visibility: isHovered ? 'visible' : 'hidden'}}
+    >
+      {level}
+    </span>
+  </div>
+</div>
+
+
+
     );
   }
 
@@ -39,9 +51,10 @@ export default function About() {
         { name: 'GitHub', level: 'Actions/Hosting', imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png' },
         { name: 'NPM', level: 'Package Manager', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png' },
         { name: 'PostgreSQL', level: 'Database', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png' },
-        { name: 'Firebase', level: 'Database', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png' },
+        { name: 'Firebase', level: 'Database', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
+        { name: 'Jest', level: 'Testing', imageUrl: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png' },
 
- 
+        
     ],
   };
 
@@ -50,19 +63,20 @@ export default function About() {
   }
 
   return (
-    <div className='my-tailwind-scope'>
-    <div className="about-container">
-      <h2 className='aboutheader text-3xl'>About Me</h2>
-      <p className='aboutinfo'>Hi everyone! My name is Meron Gebrehiwet. I am a Full-Stack Developer from London. I am currently looking for a role as a Full time developer in either Front or Back end. I enjoy making applications and this website showcases some of the projects I have built.</p>
-      <div className='tabs'>
+    <div id="about">
+    <div class="flex justify-center items-center h-screen">
+    <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">
+      <h2 className='aboutheader text-4xl text-white mb-2 text-center '>Skills</h2>
+  
+      <div className='tabs text-2xl'>
       <button 
-        className={`tab-button ${activeTab === 'Tech Stack' ? 'active' : ''}`} 
+        className={`tab-button focus:outline-none py-2 px-4 mr-2 transition-colors duration-300 ${activeTab === 'Tech Stack' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400`}
         onClick={() => handleTabClick('Tech Stack')}
       >
         Tech Stack
       </button>
       <button 
-        className={`tab-button ${activeTab === 'Tools' ? 'active' : ''}`} 
+        className={`tab-button focus:outline-none py-5 px-4 transition-colors duration-300 ${activeTab === 'Tools' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400`}
         onClick={() => handleTabClick('Tools')}
       >
         Tools
@@ -80,8 +94,6 @@ export default function About() {
       </div>
     </div>
     </div>
+    </div>
   );
 }
-
-
-    
