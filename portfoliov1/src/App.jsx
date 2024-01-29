@@ -13,9 +13,7 @@ function App() {
     <>
       <Navbar />
       <main className="flex flex-col justify-between items-center gap-8 pt-28">
-      <div id="home">
-<Home/></div>
-
+<Home/>
 <About/>
 </main>
     </>

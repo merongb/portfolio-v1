@@ -8,7 +8,7 @@ export default function About() {
   
     return (
 <div 
-  className="skill relative inline-flex items-center p-6 m-4 border border-yellow-400 rounded cursor-pointer transition-all duration-700 hover:bg-yellow-600"
+  className="skill relative inline-flex items-center p-6 m-4 border border-yellow-400 rounded cursor-pointer transition-all duration-700 hover:bg-yellow-600 fadein-up"
   onMouseEnter={() => setIsHovered(true)} 
   onMouseLeave={() => setIsHovered(false)}
 >
@@ -41,7 +41,7 @@ export default function About() {
       { name: 'CSS 3', level: 'Advanced', imageUrl: 'https://cdn-icons-png.flaticon.com/512/732/732190.png' },
       { name: 'NodeJS', level: 'Advanced', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png' },
       { name: 'ReactJS ', level: 'Advanced', imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
-      { name: 'SQL', level: 'Intermediate', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png' },
+      { name: 'SQL', level: 'Intermediate', imageUrl: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
       { name: 'Python', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png' },
       { name: 'MongoDB', level: 'Intermediate', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png' },
       
@@ -66,17 +66,17 @@ export default function About() {
     <div id="about">
     <div class="flex justify-center items-center h-screen">
     <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">
-      <h2 className='aboutheader text-4xl text-white mb-2 text-center '>Skills</h2>
+      <h2 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>Skills</h2>
   
       <div className='tabs text-2xl'>
       <button 
-        className={`tab-button focus:outline-none py-2 px-4 mr-2 transition-colors duration-300 ${activeTab === 'Tech Stack' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400`}
+        className={`tab-button focus:outline-none py-2 px-4 mr-2 transition-colors duration-300 ${activeTab === 'Tech Stack' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400 fadein-left`}
         onClick={() => handleTabClick('Tech Stack')}
       >
         Tech Stack
       </button>
       <button 
-        className={`tab-button focus:outline-none py-5 px-4 transition-colors duration-300 ${activeTab === 'Tools' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400`}
+        className={`tab-button focus:outline-none py-5 px-4 transition-colors duration-300 ${activeTab === 'Tools' ? 'border-b-2 border-yellow-400 text-white' : 'text-gray-400'} hover:text-yellow-400 fadein-right`}
         onClick={() => handleTabClick('Tools')}
       >
         Tools
