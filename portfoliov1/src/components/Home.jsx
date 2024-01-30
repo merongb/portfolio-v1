@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 export default function Home() {
     const headings = ['Full-stack Engineer', 'Tech Enthusiast', 'Software Developer'];
 
-    function Links({ name, IconComponent,href }) {
+    function Links({ name, IconComponent, href }) {
         return (
             <a 
               href={href} 
@@ -41,12 +41,12 @@ export default function Home() {
             <div className="container flex flex-col">
                 <main className="main-content">
                     <div className="text-content">
-                        <p className="intro-text fadein-bot ">Hello I'm</p>
+                        <p className="intro-text  ">Hello I'm</p>
                         <h1 className="main-heading fadein-left">Meron Gebrehiwet</h1>
                         <h2 className="sub-heading typewriter fadein-right">
                             <TypewriterText texts={headings} />
                         </h2>
-                        <p className="welcome-message fadein-up">Welcome to My personal website <span className="wave">👋🏾</span></p>
+                        <p className="welcome-message fadein-up">Welcome to my personal website <span className="wave">👋🏾</span></p>
                     </div>
                      <div className="image-container fadein-up">
                     <img

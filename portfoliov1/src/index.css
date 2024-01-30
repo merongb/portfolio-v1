@@ -152,7 +152,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 180px;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 768px) {
@@ -202,7 +202,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  padding-top: 15px;
+  padding-top: 5px;
   min-height: 5.1rem;
   font-weight: 400;
 }
@@ -216,8 +216,8 @@ body {
   width: 180px; 
   height: 180px; 
   border-radius: 50%;
-  border: 4px solid #e7ca59; 
-  box-shadow: 0 0 10px #ddff00;
+  border: 4px solid #F1C40F; 
+  box-shadow: 0 0 10px #F1C40F;
   
 }
 
