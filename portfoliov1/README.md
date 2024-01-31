@@ -1,8 +1,31 @@
-# React + Vite
+# Merons Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Hosted Application -
 
-Currently, two official plugins are available:
+This is a portfolio website which showcases some of the projects I have worked on.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To run this project locally, follow the following steps:
+
+### 1. Clone repo
+
+```
+git clone https://github.com/merongb/portfolio-v1
+```
+
+### 2. Install required dependencies
+
+```
+npm install
+```
+
+### 3. Run vite server
+
+```
+npm run dev
+```
+
+## Version requirements
+
+```
+Node v18.17.1
+```

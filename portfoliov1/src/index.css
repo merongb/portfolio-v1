@@ -166,11 +166,13 @@ body {
   .main-content {
 padding-top: 35%;
 margin: 10%;
-
-
   }
   .mylinks {
     padding-bottom: 100%;
+  }
+  .skillss {
+    padding-top: 60%;
+    margin-bottom: 100%;
   }
 }
 body {

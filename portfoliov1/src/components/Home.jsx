@@ -4,6 +4,20 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from "@mui/icons-material/Article";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { FormatItalic } from '@mui/icons-material';
+
+const Footer = () => {
+    return (
+      <Box sx={{  p: 6 }} component="footer">
+        <Typography sx={{color:'#F1C40F',fontSize:"20px", fontWeight:"100" }} variant="h6" align="center" gutterBottom>
+          Meron.g@outlook.com
+        </Typography>
+      </Box>
+    );
+  };
+
 export default function Home() {
     const headings = ['Full-stack Engineer', 'Tech Enthusiast', 'Software Developer'];
 
@@ -27,7 +41,7 @@ export default function Home() {
       const links = {
         'Links': [
           { name: 'LinkedIn', IconComponent: LinkedInIcon, href: "https://www.linkedin.com/in/meron-gebrehiwet-314a22194/"},
-          { name: 'CV', IconComponent: ArticleIcon },
+          { name: 'CV', IconComponent: ArticleIcon, href:"https://meroncvs.tiiny.site/" },
           { name: 'Github',  IconComponent: GitHubIcon, href:"https://github.com/merongb" },
           
           
@@ -65,9 +79,10 @@ export default function Home() {
     href={link.href}
   />
 ))}
-</div> 
+</div> <Footer/>
             </div>
             </section>
+            
             </>
         );
 }

@@ -33,7 +33,7 @@ export default function About() {
 
     );
   }
-
+  
   const skills = {
     'Tech Stack': [
       { name: 'Javascript', level: 'Advanced', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png' },
@@ -43,16 +43,20 @@ export default function About() {
       { name: 'ReactJS ', level: 'Advanced', imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
       { name: 'SQL', level: 'Intermediate', imageUrl: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
       { name: 'Python', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png' },
-      { name: 'MongoDB', level: 'Intermediate', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png' },
+      { name: 'Typescript', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20221110153201' },
+
       
     ],
     'Tools': [
         { name: 'Git', level: 'Version Control', imageUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
         { name: 'GitHub', level: 'Actions/Hosting', imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png' },
-        { name: 'NPM', level: 'Package Manager', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png' },
-        { name: 'PostgreSQL', level: 'Database', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png' },
-        { name: 'Firebase', level: 'Database', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
         { name: 'Jest', level: 'Testing', imageUrl: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png' },
+        { name: 'PostgreSQL', level: 'Database', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png' },
+        { name: 'MongoDB', level: 'Database', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png' },
+        { name: 'NPM', level: 'Package Manager', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png' },
+        
+        { name: 'Firebase', level: 'Database', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
+        
 
         
     ],
@@ -64,7 +68,11 @@ export default function About() {
 
   return (
     <div id="about">
-    <div class="flex justify-center items-center h-screen">
+        <section>
+            <h3 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>About Me</h3>
+            <p className="text-base md:text-lg lg:text-xl text-gray-800 dark:text-gray-300 leading-relaxed mx-auto my-4 px-4 max-w-prose">I am a Full-Stack Developer taking on an exciting transition into the tech industry. My background has equipped me with valuable skills in teamwork and problem-solving. I am now looking to use these skills and further my knowledge by joining a team as a junior in order for me to advance in the tech industry.</p>
+        </section>
+    <section class="skillss flex justify-center items-center h-screen ">
     <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">
       <h2 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>Skills</h2>
   
@@ -93,7 +101,8 @@ export default function About() {
         ))}
       </div>
     </div>
-    </div>
+    </section>
+
     </div>
   );
 }
