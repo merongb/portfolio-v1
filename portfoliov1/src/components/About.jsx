@@ -70,7 +70,7 @@ export default function About() {
     <div id="about">
         <section>
             <h3 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>About Me</h3>
-            <p className="text-base md:text-lg lg:text-xl text-gray-800 dark:text-gray-300 leading-relaxed mx-auto my-4 px-4 max-w-prose">I am a Full-Stack Developer taking on an exciting transition into the tech industry. My background has equipped me with valuable skills in teamwork and problem-solving. I am now looking to use these skills and further my knowledge by joining a team as a junior in order for me to advance in the tech industry.</p>
+            <p className="text-base md:text-lg lg:text-xl  leading-relaxed mx-auto my-9 px-4 max-w-prose">I am a Full-Stack Developer taking on an exciting transition into the tech industry. My background has equipped me with valuable skills in teamwork and problem-solving. I am now looking to use these skills and further my knowledge by joining a team as a junior in order for me to advance in the tech industry.</p>
         </section>
     <section class="skillss flex justify-center items-center h-screen ">
     <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">
