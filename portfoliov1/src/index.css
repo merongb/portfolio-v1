@@ -171,14 +171,9 @@ margin: 10%;
     padding-bottom: 100%;
   }
   .skillss {
-    padding-top: 2rem; 
+    padding-top: 90%;
+    margin-bottom: 100%;
   }
-
-  .aboutheader {
-    font-size: 3rem;
-  }
-
-
 }
 body {
   font-family: 'Poppins', sans-serif;
