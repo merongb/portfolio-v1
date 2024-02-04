@@ -27,7 +27,6 @@ const TypewriterText = ({ texts }) => {
 
     return () => clearInterval(timer);
   }, [currentText, isDeleting, index, texts]);
-console.log("hello");
   return <span>{currentText}</span>;
 };
 
