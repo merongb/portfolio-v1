@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
 export default function Home() {
-    const headings = ['Full-stack Engineer', 'Tech Enthusiast', 'Software Developer'];
+    const headings = ['Full-stack Developer', 'Tech Enthusiast', 'Software Engineer'];
 
     function Links({ name, IconComponent, href }) {
         return (
@@ -64,7 +64,7 @@ export default function Home() {
                     </div>
                      <div className="image-container fadein-up">
                     <img
-                        src="https://media.licdn.com/dms/image/D4E03AQF73k6qWBWPTQ/profile-displayphoto-shrink_800_800/0/1693129158057?e=1711584000&v=beta&t=KpJNOrCPgLfd5Xg2XPYB4Wz1GwnKJhoD1HuN4QZBGrE" 
+                        src="./profilepic.JPG" 
                         alt="Meron Gebrehiwet"
                         className="profile-image"
                     />
