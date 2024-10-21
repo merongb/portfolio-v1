@@ -64,7 +64,7 @@ export default function Home() {
                     </div>
                      <div className="image-container fadein-up">
                     <img
-                        src="./profilepic.JPG" 
+                        src="https://i.ibb.co/wYHzjzW/211feab1-f14e-4e15-8f2c-59b6270b7805.png" 
                         alt="Meron Gebrehiwet"
                         className="profile-image"
                     />
@@ -78,6 +78,7 @@ export default function Home() {
     IconComponent={link.IconComponent} 
     href={link.href}
   />
+
 ))}
 </div> <Footer/>
             </div>
