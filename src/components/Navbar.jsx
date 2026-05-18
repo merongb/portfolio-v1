@@ -26,7 +26,7 @@ export default function Navbar() {
                 
             </div>
             <a href="https://github.com/merongb" target="_blank" rel="noopener noreferrer" className="githubimg-container">
-                <img className='githubimg fadein-bot' src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="GitHub" />
+                <img className='githubimg fadein-bot' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
             </a>
         </nav>
     )
