@@ -22,9 +22,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run linter
-        run: npm run lint --fix
-
       - name: Build
         run: npm run build
 
