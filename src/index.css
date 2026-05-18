@@ -332,6 +332,10 @@ body {
 .container {
   border-bottom: solid #F1C40F;
 }
-#about {
+#about, #home {
   padding-top: 130px;
+}
+
+html {
+  scroll-padding-top: 130px;
 }
