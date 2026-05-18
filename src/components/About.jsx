@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function About() {
   const [activeTab, setActiveTab] = useState('Tech Stack');
 
-  function SkillItem({ name, level, imageUrl }) {
+  function SkillItem({ name, subtitle, imageUrl }) {
     const [isHovered, setIsHovered] = useState(false);
   
     return (
@@ -24,7 +24,7 @@ export default function About() {
       className={`text-sm transition-all duration-300 transform ${isHovered ? 'translate-y-[-10px] opacity-100' : 'opacity-0'} `}
       style={{visibility: isHovered ? 'visible' : 'hidden'}}
     >
-      {level}
+      {subtitle}
     </span>
   </div>
 </div>
@@ -36,26 +36,26 @@ export default function About() {
   
   const skills = {
     'Tech Stack': [
-      { name: 'Javascript', level: 'Advanced', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png' },
-      { name: 'HTML 5', level: 'Advanced', imageUrl: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png' },
-      { name: 'CSS 3', level: 'Advanced', imageUrl: 'https://cdn-icons-png.flaticon.com/512/732/732190.png' },
-      { name: 'NodeJS', level: 'Advanced', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png' },
-      { name: 'ReactJS ', level: 'Advanced', imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
-      { name: 'SQL', level: 'Intermediate', imageUrl: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
-      { name: 'Python', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png' },
-      { name: 'Typescript', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20221110153201' },
+      { name: 'Javascript', subtitle: 'Language for web applications', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+      { name: 'HTML 5', subtitle: 'Markup language', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+      { name: 'CSS 3', subtitle: 'Styling & layout', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+      { name: 'NodeJS', subtitle: 'Server-side runtime', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+      { name: 'ReactJS', subtitle: 'Frontend library', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { name: 'SQL', subtitle: 'Relational databases', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+      { name: 'Python', subtitle: 'Scripting & automation', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+      { name: 'Typescript', subtitle: 'Typed JavaScript', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
 
       
     ],
     'Tools': [
-        { name: 'Git', level: 'Version Control', imageUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
-        { name: 'GitHub', level: 'Actions/Hosting', imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png' },
-        { name: 'Jest', level: 'Testing', imageUrl: 'https://cdn.freebiesupply.com/logos/large/2x/jest-logo-png-transparent.png' },
-        { name: 'PostgreSQL', level: 'Database', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png' },
-        { name: 'MongoDB', level: 'Database', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png' },
-        { name: 'NPM', level: 'Package Manager', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png' },
+        { name: 'Git', subtitle: 'Version control', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+        { name: 'GitHub', subtitle: 'Code hosting', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+        { name: 'Jest', subtitle: 'Testing framework', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg' },
+        { name: 'PostgreSQL', subtitle: 'Relational DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+        { name: 'MongoDB', subtitle: 'NoSQL DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+        { name: 'NPM', subtitle: 'Package manager', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
         
-        { name: 'Firebase', level: 'Database', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
+        { name: 'Firebase', subtitle: 'Backend services', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
         
 
         
@@ -95,7 +95,7 @@ export default function About() {
           <SkillItem 
             key={skill.name} 
             name={skill.name} 
-            level={skill.level} 
+          subtitle={skill.subtitle} 
             imageUrl={skill.imageUrl} 
           />
         ))}
