@@ -86,8 +86,14 @@ export default function About() {
       </button>
     </div>
       <div className="skills">
-        {/** 3D scene for skills */}
-        <ThreeSkills items={skillsConst[activeTab]} />
+        {skills[activeTab].map((skill) => (
+          <SkillItem 
+            key={skill.name} 
+            name={skill.name} 
+            subtitle={skill.subtitle} 
+            imageUrl={skill.imageUrl} 
+          />
+        ))}
       </div>
     </div>
     </section>
