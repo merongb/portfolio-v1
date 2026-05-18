@@ -27,7 +27,7 @@ export default function Navbar() {
                 
             </div>
             <a href="https://github.com/merongb" target="_blank" rel="noopener noreferrer" className="githubimg-container">
-                <GitHubIcon className='githubimg fadein-bot' />
+                <GitHubIcon className='githubimg fadein-bot' style={{ fontSize: 32 }} />
             </a>
         </nav>
     )
