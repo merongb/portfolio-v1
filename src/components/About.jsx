@@ -65,7 +65,7 @@ export default function About() {
     <div id="about">
         <section>
             <h3 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>About Me</h3>
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed mx-auto my-9 px-4 max-w-prose italic text-yellow-200">Software Engineer with experience modernising large-scale financial systems at American Express within the MARS (Modern Accounts Receivable Systems) organisation. I build and deliver internal platforms that improve engineering productivity and operational efficiency. Experienced across backend, frontend, and platform tooling with a strong focus on automation, performance optimisation, and measurable impact. Passionate about building scalable systems, reducing manual processes, and delivering practical solutions that create real business value.</p>
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed mx-auto my-9 px-4 max-w-prose italic text-yellow-200">Software Engineer experienced in modernising large-scale financial systems. I build and deliver internal platforms that improve engineering productivity and operational efficiency. Experienced across backend, frontend, and platform tooling with a strong focus on automation, performance optimisation, and measurable impact. Passionate about building scalable systems, reducing manual processes, and delivering practical solutions that create real business value.</p>
         </section>
     <section class="skillss flex justify-center items-center h-screen ">
     <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">
