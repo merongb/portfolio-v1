@@ -46,15 +46,14 @@ export default function About() {
 
     ],
     'Tools': [
+        { name: 'Cassandra', subtitle: 'Distributed NoSQL DB', imageUrl: 'https://cdn.worldvectorlogo.com/logos/apache-cassandra.svg' },
+        { name: 'Docker', subtitle: 'Containerization', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+        { name: 'Kubernetes', subtitle: 'Container orchestration', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
         { name: 'Git', subtitle: 'Version control', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
         { name: 'GitHub', subtitle: 'Code hosting', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
-        { name: 'Jest', subtitle: 'Testing framework', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg' },
         { name: 'PostgreSQL', subtitle: 'Relational DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
         { name: 'MongoDB', subtitle: 'NoSQL DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
-        { name: 'NPM', subtitle: 'Package manager', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
-        
         { name: 'Firebase', subtitle: 'Backend services', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
-        
 
         
     ],
