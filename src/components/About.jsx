@@ -37,13 +37,15 @@ export default function About() {
   const skills = {
     'Tech Stack': [
       { name: 'Javascript', level: 'Advanced', imageUrl: 'https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png' },
+      { name: 'Typescript', level: 'Intermediate', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20221110153201' },
+      {name: 'Java', level: 'Intermediate', imageUrl: 'https://www.citypng.com/public/uploads/preview/java-white-logo-image-png-701751694771838qyus1n9gdu.png'},
       { name: 'HTML 5', level: 'Advanced', imageUrl: 'https://cdn-icons-png.flaticon.com/512/1051/1051277.png' },
       { name: 'CSS 3', level: 'Advanced', imageUrl: 'https://cdn-icons-png.flaticon.com/512/732/732190.png' },
       { name: 'NodeJS', level: 'Advanced', imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png' },
       { name: 'ReactJS ', level: 'Advanced', imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
-      { name: 'SQL', level: 'Intermediate', imageUrl: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
+      { name: 'SQL', level: 'Advanced', imageUrl: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
       { name: 'Python', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png' },
-      { name: 'Typescript', level: 'Beginner', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20221110153201' },
+
 
       
     ],
@@ -67,10 +69,13 @@ export default function About() {
   }
 
   return (
-    <div id="about">
+    
+      <div id="about">
+        
         <section>
             <h3 className='aboutheader text-4xl text-white mb-2 text-center fadein-bot'>About Me</h3>
-            <p className="text-base md:text-lg lg:text-xl  leading-relaxed mx-auto my-9 px-4 max-w-prose italic text-yellow-200 ">I am a Software Engineer transitioning into the tech industry, bringing a strong foundation in teamwork, problem-solving, and a passion for innovation. My journey so far has allowed me to apply my skills in dynamic environments, continuously learning and adapting to new challenges in the tech space. I am eager to contribute meaningfully and grow alongside industry trends. </p>
+  
+            <p className="text-base md:text-lg lg:text-xl  leading-relaxed mx-auto my-9 px-4 max-w-prose italic text-yellow-200 ">I am a Software Engineer working with American Express, bringing a strong foundation in teamwork, problem-solving, and a passion for innovation. My journey so far has allowed me to apply my skills in dynamic environments, continuously learning and adapting to new challenges in the tech space. I am eager to contribute meaningfully and grow alongside industry trends. </p>
         </section>
     <section class="skillss flex justify-center items-center h-screen ">
     <div className="w-11/12 xl:w-9/12 text-center p-8 items-center">

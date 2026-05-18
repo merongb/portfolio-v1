@@ -92,7 +92,7 @@ export default function Portfolio(): JSX.Element {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <section id="portfolio">
-        <main>
+
           <Box sx={{ bgcolor: 'background.paper', pt: 8, pb: 6 }}>
             <Container maxWidth="sm">
               <Typography component="h1" variant="h4" align="center" color="white" gutterBottom>
@@ -194,7 +194,7 @@ export default function Portfolio(): JSX.Element {
     </Box>
   </Fade>
 </Modal>
-        </main>
+
 
       </section>
     </ThemeProvider>
