@@ -24,3 +24,6 @@ dist-ssr
 *.sln
 *.sw?
 *.idea
+
+# Local Netlify folder
+.netlify

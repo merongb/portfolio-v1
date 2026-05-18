@@ -3,7 +3,7 @@ import TypewriterText from './TypewriterText';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from "@mui/icons-material/Article";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ThreeScene from './ThreeScene';
+import Hero3D from './Hero3D';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -76,7 +76,7 @@ export default function Home() {
 ))}
 </div>
 
-        <ThreeScene />
+        <Hero3D />
 
         <Footer/>
             </div>
