@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 import * as THREE from 'three';
@@ -37,11 +37,13 @@ export default function ThreeSkills({ items }) {
         <color attach="background" args={[bgColor]} />
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 5, 5]} intensity={0.8} />
-        <group>
-          {items.map((s, i) => (
-            <SkillMesh key={s.name} skill={s} index={i} total={total} />
-          ))}
-        </group>
+        <Suspense fallback={null}>
+          <group>
+            {items.map((s, i) => (
+              <SkillMesh key={s.name} skill={s} index={i} total={total} />
+            ))}
+          </group>
+        </Suspense>
         <OrbitControls enablePan enableZoom enableRotate />
       </Canvas>
     </div>
