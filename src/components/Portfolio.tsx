@@ -97,7 +97,7 @@ export default function Portfolio(): JSX.Element {
         <CardMedia
           component="img"
           image={imageUrl}
-          alt={title}
+          alt={title} loading="lazy"
           sx={{
             width: '100%',
             height: '100%',

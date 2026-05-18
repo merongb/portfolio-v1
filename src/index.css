@@ -338,4 +338,30 @@ body {
 
 html {
   scroll-padding-top: 130px;
+}/* Mobile navbar and responsive tweaks */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+}
+.menu-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #F1C40F;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.navbar-content.open { display: flex; }
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+  .navbar-content { display: none; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .navbar { padding: 1rem; }
+  .main-heading { font-size: 2rem; }
+  .sub-heading { font-size: 1.1rem; }
 }
