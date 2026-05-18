@@ -46,7 +46,6 @@ export default function About() {
 
     ],
     'Tools': [
-        { name: 'Cassandra', subtitle: 'Distributed NoSQL DB', imageUrl: 'https://cdn.worldvectorlogo.com/logos/apache-cassandra.svg' },
         { name: 'Docker', subtitle: 'Containerization', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
         { name: 'Kubernetes', subtitle: 'Container orchestration', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
         { name: 'Git', subtitle: 'Version control', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
