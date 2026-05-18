@@ -3,6 +3,7 @@ import TypewriterText from './TypewriterText';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArticleIcon from "@mui/icons-material/Article";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ThreeScene from './ThreeScene';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -41,7 +42,7 @@ export default function Home() {
       const links = {
         'Links': [
           { name: 'LinkedIn', IconComponent: LinkedInIcon, href: "https://www.linkedin.com/in/meron-gebrehiwet-314a22194/"},
-          { name: 'CV', IconComponent: ArticleIcon, href:"https://meroncvs.tiiny.site/" },
+          { name: 'CV', IconComponent: ArticleIcon, href: "/cv.pdf" },
           { name: 'Github',  IconComponent: GitHubIcon, href:"https://github.com/merongb" },
           
           
@@ -73,7 +74,11 @@ export default function Home() {
   />
 
 ))}
-</div> <Footer/>
+</div>
+
+        <ThreeScene />
+
+        <Footer/>
             </div>
             </section>
             
