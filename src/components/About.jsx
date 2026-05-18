@@ -52,7 +52,6 @@ export default function About() {
         { name: 'GitHub', subtitle: 'Code hosting', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
         { name: 'PostgreSQL', subtitle: 'Relational DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
         { name: 'MongoDB', subtitle: 'NoSQL DB', imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
-        { name: 'Firebase', subtitle: 'Backend services', imageUrl: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg' },
 
         
     ],
