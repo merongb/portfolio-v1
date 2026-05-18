@@ -62,13 +62,6 @@ export default function Home() {
                         </h2>
                         <p className="welcome-message fadein-up">Welcome to my personal website <span className="wave">👋🏾</span></p>
                     </div>
-                     <div className="image-container fadein-up">
-                    <img
-                        src="https://i.ibb.co/wYHzjzW/211feab1-f14e-4e15-8f2c-59b6270b7805.png" 
-                        alt="Meron Gebrehiwet"
-                        className="profile-image"
-                    />
-                </div> 
                 </main>
                 <div className="mylinks">
 {links.Links.map((link) => (
