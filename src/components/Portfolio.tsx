@@ -90,9 +90,9 @@ export default function Portfolio(): JSX.Element {
             </Container>
           </Box>
           <Container sx={{ py: 8 }} maxWidth="md">
-            <Grid container spacing={4}>
+            <Grid container spacing={4} justifyContent={cards.length === 1 ? 'center' : 'flex-start'}>
   {cards.map(({ id, title, description, imageUrl, demoUrl, repoUrl, apiUrl, apiRepo, techStack }) => (
-    <Grid item key={id} xs={12} sm={6} md={4}>
+    <Grid item key={id} xs={12} sm={cards.length === 1 ? 8 : 6} md={cards.length === 1 ? 6 : 4} sx={cards.length === 1 ? { mx: 'auto' } : undefined}>
       <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',  }}>
         <CardMedia
           component="img"
