@@ -22,38 +22,13 @@ const cards: CardData[] = [
   {
     id: 1,
     title: 'Freestroke',
-    description: "An app designed for people who enjoy wild swimming and its purpose is to help users discover beautiful swimming spots across the country. Users can view an interactive map showcasing hundreds of wild swimming spots in the UK, including beaches, and lakes.",
+    description: "Freestroke is a combined mobile frontend and backend API for discovering wild swimming spots. The mobile app provides an interactive map of locations and user reviews, while the backend exposes RESTful endpoints to manage locations and reviews. This project includes both the frontend app and the supporting API.",
     imageUrl: "https://i.ibb.co/41BB8Y3/Final-freestroke-image.png",
     demoUrl: "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy9hZjEwNTRjMThjZDAyYTcyL0VYOVlyN20xUlhSTGxRdXhPNi0tV1RNQkRPUkZtRDd2VFhBOXppV0FyTXQxaEE%5FZT10NFBUU1c&cid=AF1054C18CD02A72&id=AF1054C18CD02A72%21sb9af587f45b54b74950bb13bafbe5933&parId=root&o=OneUp",
     repoUrl: 'https://github.com/merongb/freestroke-app',
-    techStack: ['Javascript','React Native','Expo', 'SQLite', 'Firebase']
-  },
-  {
-    id: 2,
-    title: 'Freestroke API',
-    description: 'A Restful API supported by a MongoDB database interfaced through Mongosh. With the provided API endpoints, users can perform a variety of actions, including viewing and posting locations, as well as reviews.',
-    imageUrl: 'https://i.ibb.co/Jnt8cd5/Screenshot-2024-01-30-at-02-00-26.png',
-    demoUrl: 'https://freestroke-api.onrender.com/api' ,
-    repoUrl: 'https://github.com/merongb/be-freestroke',
-    techStack: ['Javascript','NodeJs','MongoDB', 'ExpressJs']
-  },
-  {
-    id: 3,
-    title: 'NC News',
-    description: 'A dynamic and user-centric platform that seamlessly integrates with the NC-News-API. Its primary purpose is to empower users with an interactive and engaging experience that closely mirrors the functionality of real-world applications.',
-    imageUrl: 'https://i.ibb.co/D1zBd9C/Screenshot-2024-01-30-at-13-10-41.png',
-    demoUrl: 'https://nc-newsgb.netlify.app/',
-    repoUrl: 'https://github.com/merongb/nc-news',
-    techStack: ['Javascript','ReactJs']
-  },
-  {
-    id: 4,
-    title: 'NC News API',
-    description: 'A Restful API supported by a relational database, interfaced through PostgreSQL. With the provided API endpoints, users can perform a variety of actions, including viewing and commenting on articles',
-    imageUrl: 'https://i.ibb.co/10nnmJh/Screenshot-2024-01-30-at-23-08-50.png',
-    demoUrl: 'https://news-article-slsk.onrender.com/api' ,
-    repoUrl: 'https://github.com/merongb/NC-News-API',
-    techStack: ['Javascript','PostgreSQL', 'ExpressJs', 'NodeJs']
+    apiUrl: 'https://freestroke-api.onrender.com/api',
+    apiRepo: 'https://github.com/merongb/be-freestroke',
+    techStack: ['Javascript','React Native','Expo','SQLite','NodeJs','MongoDB','ExpressJs']
   },
 ];
 
@@ -116,7 +91,7 @@ export default function Portfolio(): JSX.Element {
           </Box>
           <Container sx={{ py: 8 }} maxWidth="md">
             <Grid container spacing={4}>
-  {cards.map(({ id, title, description, imageUrl, demoUrl, repoUrl, techStack }) => (
+  {cards.map(({ id, title, description, imageUrl, demoUrl, repoUrl, apiUrl, apiRepo, techStack }) => (
     <Grid item key={id} xs={12} sm={6} md={4}>
       <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',  }}>
         <CardMedia
@@ -149,6 +124,8 @@ export default function Portfolio(): JSX.Element {
         <CardActions>
         <Button size="small" component="a" href={demoUrl} target="_blank" rel="noopener noreferrer" sx={{color: '#F1C40F',fontWeight:'bolder', borderRadius: 1, padding: '2px 8px' }}>View Live</Button>
         <Button size="small" component="a" href={repoUrl} target="_blank" rel="noopener noreferrer" sx={{color: '#F1C40F',fontWeight:'bolder', borderRadius: 1, padding: '2px 8px' }}>View Repo</Button>
+        {apiUrl && <Button size="small" component="a" href={apiUrl} target="_blank" rel="noopener noreferrer" sx={{color: '#F1C40F',fontWeight:'bolder', borderRadius: 1, padding: '2px 8px' }}>View API</Button>}
+        {apiRepo && <Button size="small" component="a" href={apiRepo} target="_blank" rel="noopener noreferrer" sx={{color: '#F1C40F',fontWeight:'bolder', borderRadius: 1, padding: '2px 8px' }}>View API Repo</Button>}
         </CardActions>
       </Card>
     </Grid>
