@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 export default function Navbar() {
@@ -26,7 +27,7 @@ export default function Navbar() {
                 
             </div>
             <a href="https://github.com/merongb" target="_blank" rel="noopener noreferrer" className="githubimg-container">
-                <img className='githubimg fadein-bot' src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png" alt="GitHub" />
+                <GitHubIcon className='githubimg fadein-bot' style={{ fontSize: 32 }} />
             </a>
         </nav>
     )
